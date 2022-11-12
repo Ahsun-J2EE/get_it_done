@@ -1,8 +1,12 @@
 import 'package:GID/core/ui_color_constant.dart';
 import 'package:GID/core/ui_constants.dart';
 import 'package:GID/core/ui_utils.dart';
+<<<<<<< HEAD
 import 'package:GID/ui/screens/auth/registration_screen.dart';
 import 'package:GID/ui/screens/auth/reset_password.dart';
+=======
+import 'package:GID/ui/screens/home/home_page_container_screen.dart';
+>>>>>>> 42318f8c430e8accb5652b86d053163ed30f31e1
 import 'package:GID/ui/widgets/app_button.dart';
 import 'package:GID/ui/widgets/app_edit_text.dart';
 import 'package:flutter/material.dart';
@@ -60,6 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
             AppButton(
                 onTap: () {
                   debugPrint("login pressed");
+                  Get.to(() => const HomePageContainerScreen());
                 },
                 title: "Get In"),
             Center(
